@@ -1,16 +1,14 @@
-package model;
+package models;
 
 public class Movie {
     private String movieId;
     private String title;
-    private String year;
 
-    public Movie(String movieId, String title, String year) {
+    public Movie(String movieId, String title) {
         this.movieId = movieId;
         this.title = title;
-        this.year = year;
-
     }
+    public Movie() {};
 
     public String getMovieId() {
         return movieId;
@@ -26,13 +24,5 @@ public class Movie {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
     }
 }
